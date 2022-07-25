@@ -1,38 +1,273 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.home{
+    background-image: url('./img/bg-img.png');
+    height: 70vh;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.c-btn{
+    width: 100%;
+    color: white;
+    background-color: #DE9303 !important;
+}
+
+.column{
+    display: flex;
+    align-items: center;
+}
+
+input,textarea{
+    font-size: 0.8em !important;
+    padding: 0.6rem 2rem !important;
+}
+
+.img-sz{
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    transition: 0.5s ease-in-out;
+}
+
+.img-sz:hover {
+    transform: scale(0.9) !important;
+}
+
+.hr{
+    color: #434242;
+    font-weight: 900;
+    line-break: anywhere;
+}
+
+.page-link{
+    color: #434242 !important;
+}
+
+.act{
+    background-color: #252424 !important;
+    color: #F0F0F0 !important;
+}
+
+.para{
+    line-height: 1.2rem;
+    line-break: auto;
+    color: #5f5c5c;
+    font-size: 0.8rem;
+}
+
+/* .itemCon{
+    position: relative;
+} */
+
+.org{
+    color: #DE9303;
+}
+
+.fir-name{
+    font-weight: 300;
+}
+
+.center{
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.fl-col{
+    flex-direction: column;
+}
+
+.center p{
+    /* font-weight: 800; */
+    font-size: 1rem;
+    color: #757474;
+    /* text-transform: uppercase; */
+}
+
+.center img{
+    width: 100%;
+    opacity: 0.5;
+    top: 6px;
+    height: 10rem;
+    position: absolute;
+    object-fit: contain;
+}
+
+
+
+
+.searchDiv{
+    min-height: 70vh;
+}
+
+.sec-name{
+    font-weight: 800;
+}
+
+.home-text{
+    font-size: 3rem;
+    line-height: 55px;
+    text-align: center;
+}
+
+.ml-auto{
+    margin-left: auto;
+    padding-right: 5rem ;
+}
+
+.ml-auto li{
+    margin: 0rem 0.6rem;
+    /* flex-basis: ; */
+}
+
+.pl{
+    padding-left: 4rem;
+}
+
+.dk{
+    color: #B7B7B7 !important;
+}
+
+.btn-h:hover{
+    background-color: #a16902 !important;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.me{
+    text-align: center;
+}
+
+.gradient, .crd{
+    transition: 1s ease !important;
+}
+
+.crd:hover .gradient{
+    transition: 0.5s ease !important;
+    opacity: 0;
+}
+
+.crd:hover {
+    transform: translate(4px, 6px);
+}
+
+.addressIcon{
+    margin: 0.5rem;
+}
+
+.footer{
+    background-color: #252424 ;
+    width: 100%;
+    height: 80px;
+    bottom: 0;
+    /* position: absolute; */
+}
+
+.cNav{
+    color: #252424 !important ;
+    text-decoration: none !important;
+    margin-top: 2rem;
+    min-height: 100vh;
+}
+
+.con-bg{
+    background-color: #F0F0F0;
+    /* padding: 4rem; */
+
+}
+
+.jst{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jst-col{
+    flex-direction: column;
+}
+
+.hder{
+    background-color: #DE9303;
+    width: 100%;
+    height: 12rem;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.hr{
+    margin-top: 4rem;
+}
+
+.SearchForm{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.SearchForm button{
+    border: none;
+    padding: 0rem 1rem;
+}
+
+.searchInput::placeholder{
+    color: #f3f3f3 !important;
+}
+
+.searchInput{
+    padding: 10px;
+    border: none;
+    outline: none !important;
+    color: #f3f3f3 !important;
+    background-color: #5e5e5e;
+    font-size: 12px;
+    width: 550px;
+  
   }
+
+
+
+/* tabes */
+
+@media screen and (min-width: 767px) {
+    .splide__slide{
+        width: calc(33.333%) !important;
+      }
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 767px) {
+    .home-text{
+        text-align: left;
+        /* padding-left: 3rem; */
+    }
+    .home-w{
+    align-items: baseline !important;
+    padding: 4rem;
+    }
+    .splide__slide{
+      /* width: calc(50%) !important; */
+    }
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+  /* phone */
+  
+  @media only screen and (max-width: 450px) {
+    .splide__slide{
+        /* width: calc(100%) !important; */
+      }
+
+    }

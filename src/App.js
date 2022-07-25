@@ -1,23 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'react-toastify/dist/ReactToastify.css';
+
+import Pages from './pages/Pages';
+import React from 'react';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="google.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Netlify Test
-        </a>
-      </header>
+      <Pages />
     </div>
   );
 }
