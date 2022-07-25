@@ -11,11 +11,11 @@ function App() {
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="google.com"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Netlify Test
         </a>
       </header>
     </div>
