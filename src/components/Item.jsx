@@ -7,7 +7,7 @@ import { Container, Row, Col, Spinner } from 'reactstrap';
 import { useParams } from 'react-router-dom';
 import ErrorComp from './ErrorComp';
 import { Link } from 'react-router-dom';
-import Footer from './Footer';
+import Footer from './Footer'
 import { useNavigate } from 'react-router-dom';
 
 
