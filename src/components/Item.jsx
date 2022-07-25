@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import { db } from '../firebase';
-import { collection, getDocs, where, query, } from "firebase/firestore";
+import { collection, getDocs } from "firebase/firestore";
 import styled from 'styled-components'
 import Head from './Head'
 import { Container, Row, Col, Spinner } from 'reactstrap';
