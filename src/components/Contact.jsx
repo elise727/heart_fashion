@@ -14,7 +14,7 @@ function Contact() {
             <Col md="6" xl="6" className="div-holder px-4 py-3">
                 <p className="phone-number my-0">
                     <BsFillTelephoneFill className="addressIcon"></BsFillTelephoneFill>
-                    +1 (916) 580 1702
+                     +1 (720) 507 5915
                 </p>
                 <p className="address">
                     <FaLocationArrow className="addressIcon"></FaLocationArrow>
